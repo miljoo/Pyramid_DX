@@ -10,6 +10,19 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dx11Draw.cpp" />
+    <ClCompile Include="Dx11Base.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dx11Draw.h" />
+    <ClInclude Include="Dx11Base.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Sprite.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{16944D05-7842-451A-8F11-D9CD51069119}</ProjectGuid>
     <RootNamespace>Pyramid_DX</RootNamespace>
@@ -70,16 +83,6 @@
       <AdditionalDependencies>dinput8.lib;dxguid.lib;dxerr.lib;d3d11.lib;d3dx11.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Dx11BaseClass.cpp" />
-    <ClCompile Include="KeyboardDemo.cpp" />
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Dx11BaseClass.h" />
-    <ClInclude Include="KeyboardDemo.h" />
-    <ClInclude Include="Keymap.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
